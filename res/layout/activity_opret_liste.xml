@@ -9,8 +9,22 @@
     tools:context=".OpretListe" >
 
     <TextView
+        android:id="@+id/tVNavn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Navn på indkøbsliste: " />
+
+    <EditText
+        android:id="@+id/eTNavn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_below="@+id/tVNavn"
+        android:ems="10"
+        android:inputType="textCapSentences" >
+
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>

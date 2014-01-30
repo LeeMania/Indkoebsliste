@@ -16,6 +16,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		btnOpret = (Button) findViewById(R.id.btnOpret);
+		//Test
 		
 		btnOpret.setOnClickListener(new OnClickListener() {
 			
