@@ -8,23 +8,41 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".OpretListe" >
 
-    <TextView
-        android:id="@+id/tVNavn"
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tVNavn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Navn på indkøbsliste: " />
+
+        <EditText
+            android:id="@+id/eTNavn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tVNavn"
+            android:inputType="textCapSentences" />
+
+        <Button
+            android:id="@+id/btnTilf"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/eTNavn"
+            android:text="Tilføj &quot;objekt&quot;" />
+    </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:text="Navn på indkøbsliste: " />
-
-    <EditText
-        android:id="@+id/eTNavn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/tVNavn"
-        android:ems="10"
-        android:inputType="textCapSentences" >
-
-        <requestFocus />
-    </EditText>
+        android:layout_below="@+id/relativeLayout1" >
+		<ScrollView 
+		    android:id="@+id/sVTilft"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent" ></ScrollView>
+    </RelativeLayout>
 
 </RelativeLayout>
