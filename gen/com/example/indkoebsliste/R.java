@@ -28,8 +28,8 @@ public final class R {
         public static final int btnOpret=0x7f080000;
         public static final int btnTilf=0x7f080004;
         public static final int eTNavn=0x7f080003;
+        public static final int lVTlft=0x7f080005;
         public static final int relativeLayout1=0x7f080001;
-        public static final int sVTilft=0x7f080005;
         public static final int tVNavn=0x7f080002;
     }
     public static final class layout {

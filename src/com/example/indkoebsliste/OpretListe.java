@@ -8,10 +8,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.ScrollView;
 
 public class OpretListe extends Activity {
 	private Button btnTilf;
 	private EditText eTNavn;
+	private ListView lVTlft;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +22,7 @@ public class OpretListe extends Activity {
 		setContentView(R.layout.activity_opret_liste);
 		btnTilf = (Button) findViewById(R.id.btnTilf);
 		eTNavn = (EditText) findViewById(R.id.eTNavn);
+		lVTlft = (ListView) findViewById(R.id.lVTlft);
 		
 		
 		btnTilf.setOnClickListener(new OnClickListener() {
@@ -34,6 +38,11 @@ public class OpretListe extends Activity {
 	}
 
 	private void parseTilDb() {
+		String navn = eTNavn.getText().toString();
+		//Hent alle textviews
+		for (int i = 0; i < lVTlft.getCount(); i++) {			
+			lVTlft.getItemAtPosition(i).toString();
+		}
 		
 		//parse data
 	}
