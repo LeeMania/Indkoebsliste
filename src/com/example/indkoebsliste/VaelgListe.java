@@ -31,6 +31,7 @@ public class VaelgListe extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				Intent i = new Intent(getApplicationContext(), OpretListe.class);
+				//Burde bruge startActivityForResult(i);
 				startActivity(i);
 			}
 		});

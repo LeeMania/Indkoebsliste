@@ -58,8 +58,7 @@ public class OpretListe extends Activity {
 		
 		btnAnnList.setOnClickListener(new OnClickListener() {
 			public void onClick(View view) {
-				Intent i = new Intent(context, VaelgListe.class);
-				startActivity(i);
+				finish();
 			}
 		});
 	}
