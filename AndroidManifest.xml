@@ -26,6 +26,10 @@
             android:name="com.example.indkoebsliste.OpretListe"
             android:label="@string/title_activity_opret_liste" >
         </activity>
+        <activity
+            android:name="com.example.indkoebsliste.VaelgListe"
+            android:label="@string/title_activity_vaelg_liste" >
+        </activity>
     </application>
 
 </manifest>
