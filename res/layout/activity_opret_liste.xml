@@ -17,7 +17,7 @@
             android:id="@+id/tVNavn"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Navn på indkøbsliste: " />
+            android:text="@string/tVNavnTekst" />
 
         <EditText
             android:id="@+id/eTNavn"
@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/eTNavn"
-            android:text="Tilføj &quot;objekt&quot;" />
+            android:text="@string/btnTilfTekst" />
 
         <Button
             android:id="@+id/btnSort"
@@ -41,7 +41,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignBaseline="@+id/btnTilf"
-            android:text="Sorter" />
+            android:text="@string/btnSortTekst" />
 
     </RelativeLayout>
 
@@ -49,7 +49,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/relativeLayout1"
-        android:layout_above="@+id/btnOpret" >
+        android:layout_above="@+id/btnGemListe" >
 
 		<ListView
 		    android:id="@+id/lVTlft"
@@ -59,11 +59,19 @@
     </RelativeLayout>
 
     <Button
-        android:id="@+id/btnOpret"
+        android:id="@+id/btnGemListe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="Opret liste" />
+        android:text="@string/btnGemListeTekst" />
+
+    <Button
+        android:id="@+id/btnAnnList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/btnAnnList" />
 
 </RelativeLayout>

@@ -12,10 +12,9 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class VaelgListe extends Activity {
-	private Button btnOpret;
+	private Button btnOpretListe;
 	private ListView lVLister;
 	private Context context = this;
 	private ArrayAdapter<String> arrAdap;
@@ -24,11 +23,11 @@ public class VaelgListe extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_vaelg_liste);
-		btnOpret = (Button) findViewById(R.id.btnOpret);
+		btnOpretListe = (Button) findViewById(R.id.btnOpretListe);
 		lVLister = (ListView) findViewById(R.id.lVLister);
 		arrAdap = new ArrayAdapter<String>(this, R.layout.row);
 
-		btnOpret.setOnClickListener(new OnClickListener() {
+		btnOpretListe.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
 				Intent i = new Intent(getApplicationContext(), OpretListe.class);
@@ -37,6 +36,7 @@ public class VaelgListe extends Activity {
 		});
 
 		fyldLister();
+		
 		lVLister.setOnItemClickListener(new OnItemClickListener() {
 	        public void onItemClick(AdapterView<?> parentView, View childView,
 	                int position, long id) {
@@ -45,14 +45,6 @@ public class VaelgListe extends Activity {
 				startActivity(i);
 	        }
 	    });
-		
-//		setOnItemClickListener(new OnClickListener() {
-//			
-//			@Override
-//			public void onClick(View v) {
-				
-//			}
-//		});
 	}
 
 	private void fyldLister() {

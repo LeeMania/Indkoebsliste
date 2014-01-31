@@ -24,25 +24,30 @@ public final class R {
         public static final int ic_launcher=0x7f020000;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000b;
-        public static final int btnOpret=0x7f080005;
+        public static final int action_settings=0x7f08000f;
+        public static final int btnAnnList=0x7f080007;
+        public static final int btnGemListe=0x7f080005;
+        public static final int btnOpretListe=0x7f080008;
         public static final int btnSort=0x7f080004;
         public static final int btnTilf=0x7f080003;
         public static final int eTNavn=0x7f080002;
-        public static final int lVLister=0x7f080007;
+        public static final int lVLister=0x7f080009;
         public static final int lVTlft=0x7f080006;
-        public static final int promptIn=0x7f08000a;
-        public static final int promptTV=0x7f080009;
+        public static final int promptTV=0x7f08000d;
+        public static final int rediPromptIn=0x7f08000b;
+        public static final int rediPromptTV=0x7f08000a;
         public static final int relativeLayout1=0x7f080000;
-        public static final int rowTextView=0x7f080008;
+        public static final int rowTextView=0x7f08000c;
         public static final int tVNavn=0x7f080001;
+        public static final int tilfojPromptIn=0x7f08000e;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int activity_opret_liste=0x7f030001;
         public static final int activity_vaelg_liste=0x7f030002;
-        public static final int row=0x7f030003;
-        public static final int tilfoj_prompt=0x7f030004;
+        public static final int redi_prompt=0x7f030003;
+        public static final int row=0x7f030004;
+        public static final int tilfoj_prompt=0x7f030005;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -52,10 +57,17 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
-        public static final int title_activity_opret_liste=0x7f050003;
-        public static final int title_activity_rediger_liste=0x7f050005;
-        public static final int title_activity_vaelg_liste=0x7f050004;
+        public static final int btnAnnList=0x7f05000c;
+        public static final int btnGemListeTekst=0x7f050008;
+        public static final int btnOpretListeTekst=0x7f050009;
+        public static final int btnSortTekst=0x7f050007;
+        public static final int btnTilfTekst=0x7f050006;
+        public static final int rediPrompt=0x7f05000b;
+        public static final int tVNavnTekst=0x7f050005;
+        public static final int tilfPrompt=0x7f05000a;
+        public static final int title_activity_opret_liste=0x7f050002;
+        public static final int title_activity_rediger_liste=0x7f050004;
+        public static final int title_activity_vaelg_liste=0x7f050003;
     }
     public static final class style {
         /** 

@@ -3,9 +3,16 @@
 
     <string name="app_name">Indkoebsliste</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
     <string name="title_activity_opret_liste">OpretListe</string>
     <string name="title_activity_vaelg_liste">VaelgListe</string>
     <string name="title_activity_rediger_liste">RedigerListe</string>
+    <string name="tVNavnTekst">Navn på indkøbsliste: </string>
+    <string name="btnTilfTekst">Tilføj &quot;objekt&quot;</string>
+    <string name="btnSortTekst">Sorter</string>
+    <string name="btnGemListeTekst">Gem liste</string>
+    <string name="btnOpretListeTekst">Opret indkøbsliste</string>
+    <string name="tilfPrompt">Hvad vil du tilføje til listen?</string>
+    <string name="rediPrompt">Rediger emne:</string>
+    <string name="btnAnnList">Annuller</string>
 
 </resources>

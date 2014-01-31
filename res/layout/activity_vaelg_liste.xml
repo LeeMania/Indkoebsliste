@@ -9,17 +9,17 @@
     tools:context=".VaelgListe" >
 
     <Button
-        android:id="@+id/btnOpret"
+        android:id="@+id/btnOpretListe"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:text="Opret indkøbsliste" />
+        android:text="@string/btnOpretListeTekst" />
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/btnOpret" >
+        android:layout_below="@+id/btnOpretListe" >
 
 		<ListView
 		    android:id="@+id/lVLister"

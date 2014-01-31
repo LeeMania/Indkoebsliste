@@ -19,7 +19,7 @@ import android.widget.EditText;
 import android.widget.ListView;
 
 public class OpretListe extends Activity {
-	private Button btnTilf, btnOpret, btnSort;
+	private Button btnTilf, btnGemListe, btnSort, btnAnnList;
 	private EditText eTNavn;
 	private ListView lVTlft;
 	private Context context = this;
@@ -32,32 +32,34 @@ public class OpretListe extends Activity {
 		btnTilf = (Button) findViewById(R.id.btnTilf);
 		eTNavn = (EditText) findViewById(R.id.eTNavn);
 		lVTlft = (ListView) findViewById(R.id.lVTlft);
-		btnOpret = (Button) findViewById(R.id.btnOpret);
+		btnGemListe = (Button) findViewById(R.id.btnGemListe);
 		btnSort = (Button) findViewById(R.id.btnSort);
+		btnAnnList = (Button) findViewById(R.id.btnAnnList);
 
 		arrAdap = new ArrayAdapter<String>(this, R.layout.row);
 
 		btnTilf.setOnClickListener(new OnClickListener() {
-
-			@Override
 			public void onClick(View arg0) {
 				tilfjPrompt();
 			}
 		});
 
-		btnOpret.setOnClickListener(new OnClickListener() {
-
-			@Override
+		btnGemListe.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
 				opret();
 			}
 		});
 
 		btnSort.setOnClickListener(new OnClickListener() {
-
-			@Override
 			public void onClick(View v) {
 				sort();
+			}
+		});
+		
+		btnAnnList.setOnClickListener(new OnClickListener() {
+			public void onClick(View view) {
+				Intent i = new Intent(context, VaelgListe.class);
+				startActivity(i);
 			}
 		});
 	}
@@ -85,7 +87,7 @@ public class OpretListe extends Activity {
 		View prompt = layIn.inflate(R.layout.tilfoj_prompt, null);
 		AlertDialog.Builder alertDiaBuild = new AlertDialog.Builder(context);
 		alertDiaBuild.setView(prompt);
-		final EditText in = (EditText) prompt.findViewById(R.id.promptIn);
+		final EditText in = (EditText) prompt.findViewById(R.id.tilfojPromptIn);
 		alertDiaBuild
 				.setCancelable(false)
 				.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -112,6 +114,7 @@ public class OpretListe extends Activity {
 
 	private void opret() {
 		String navn = eTNavn.getText().toString();
+		
 		ArrayList<String> listData = new ArrayList<String>();
 
 		// Henter alle textviews
