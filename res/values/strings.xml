@@ -6,5 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_opret_liste">OpretListe</string>
     <string name="title_activity_vaelg_liste">VaelgListe</string>
+    <string name="title_activity_rediger_liste">RedigerListe</string>
 
 </resources>
