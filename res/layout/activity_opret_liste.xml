@@ -33,16 +33,37 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/eTNavn"
             android:text="Tilføj &quot;objekt&quot;" />
+
+        <Button
+            android:id="@+id/btnSort"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBaseline="@+id/btnTilf"
+            android:text="Sorter" />
+
     </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/relativeLayout1" >
-		<ListView 
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_above="@+id/btnOpret" >
+
+		<ListView
 		    android:id="@+id/lVTlft"
 		    android:layout_width="fill_parent"
-		    android:layout_height="fill_parent" />
+		    android:layout_height="match_parent" />
+
     </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnOpret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Opret liste" />
 
 </RelativeLayout>
